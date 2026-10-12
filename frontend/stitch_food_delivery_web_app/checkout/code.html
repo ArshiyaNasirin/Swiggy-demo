@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface-variant": "#59413a", "primary-container": "#cb491b", "inverse-primary": "#ffb59e", "tertiary-container": "#008376", "background": "#fbf9f5", "secondary": "#8e4e14", "inverse-surface": "#30312e", "secondary-fixed-dim": "#ffb780", "on-error-container": "#93000a", "surface-bright": "#fbf9f5", "surface-container-low": "#f5f3ef", "on-secondary-container": "#783d01", "tertiary-fixed": "#8cf5e4", "on-secondary": "#ffffff", "on-tertiary-container": "#f4fffb", "on-tertiary": "#ffffff", "primary-fixed": "#ffdbd0", "surface-container-highest": "#e4e2de", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "outline": "#8d7169", "tertiary": "#00685d", "secondary-fixed": "#ffdcc4", "surface-container": "#efeeea", "primary-fixed-dim": "#ffb59e", "surface-container-high": "#eae8e4", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005048", "outline-variant": "#e1bfb5", "inverse-on-surface": "#f2f0ed", "tertiary-fixed-dim": "#6fd8c8", "secondary-container": "#ffab69", "on-tertiary-fixed": "#00201c", "primary": "#a93101", "on-background": "#1b1c1a", "on-primary-fixed": "#3a0b00", "surface": "#fbf9f5", "on-surface": "#1b1c1a", "on-secondary-fixed": "#2f1400", "surface-variant": "#e4e2de", "surface-dim": "#dbdad6", "error": "#ba1a1a", "on-secondary-fixed-variant": "#6f3800", "on-primary-fixed-variant": "#842400", "surface-tint": "#ac3403" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1.25rem" }, "fontFamily": { "display-lg": ["Cambria"], "headline-sm": ["Cambria"], "body-lg": ["Cambria"], "label-sm": ["Cambria"], "label-md": ["Cambria"], "headline-md": ["Cambria"], "headline-lg": ["Cambria"], "body-md": ["Cambria"], "display-lg-mobile": ["Cambria"], "label-lg": ["Cambria"], "body-sm": ["Cambria"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="FoodDelivery Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUsotZ3PJzrH4G0YQ0umcKkRxDxsABwojowFJrFIGfzwSHISycctc6nhe0qLDcoJwiWh3VMeonPcU7Cj6wiehJ5uGUtJGMclHP2ytix-skWhdUMavLgCPH4caijN_ZIp_xOd5eawR2l-8VwRg4AhsERNYBhsoqAzulZNqubIYQ-Es7SLQTYXXPYwqo_hmnnOsrWXkq4ARK29AVQ4fuCPckR5Ty9NPuF8rbh7k31C5d"/><span class="text-headline-md font-headline-md text-primary">TastingRoom</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-full"><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-md rounded-full" data-path="home" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">home</span>Home</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="restaurants" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">storefront</span>Restaurants</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">receipt_long</span>Orders</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">person</span>Profile</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-full text-on-surface-variant text-label-lg cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span>Downtown, 5th Ave</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="relative flex-1"><span class="absolute inset-y-0 left-0 flex items-center pl-space-md pointer-events-none material-symbols-outlined text-outline text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface pl-10 pr-space-md py-2 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search dishes, restaurants..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-primary text-on-primary text-label-sm rounded-full flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Top Banner / Headline Area -->
+<div class="px-space-lg pt-space-xl pb-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="text-label-md font-label-md text-primary tracking-wider uppercase mb-space-xs">Final Step</div>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-on-surface">Secure Checkout</h1>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-space-sm rounded-full w-fit">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+<span class="text-label-lg font-label-lg text-on-surface-variant">256-Bit Encrypted Payment</span>
+</div>
+</div>
+<!-- Main Grid Layout -->
+<div class="px-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Delivery, Time, Payment (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Section 1: Delivery Address -->
+<div class="bg-surface-container-low p-space-lg rounded-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Delivery Address</h2>
+</div>
+<button class="text-primary text-label-lg font-label-lg hover:underline">Change</button>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-fixed text-[24px]">home</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="text-headline-sm font-headline-sm text-on-surface">Home</span>
+<span class="bg-primary-container/10 text-primary text-label-sm px-space-sm py-0.5 rounded-full font-bold">Default</span>
+</div>
+<p class="text-body-md text-on-surface-variant mt-1" id="checkout-address">742 Evergreen Terrace, Apt 4B, Downtown, 5th Ave</p>
+<p class="text-body-sm text-outline mt-0.5">Ring doorbell twice upon arrival. Leave at door if no answer.</p>
+</div>
+</div>
+</div>
+<!-- Section 2: Delivery Time Slots -->
+<div class="bg-surface-container-low p-space-lg rounded-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">schedule</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Delivery Time</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="delivery_time" type="radio"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary text-on-surface transition-all flex flex-col gap-space-xs shadow-sm">
+<span class="text-label-md font-label-md opacity-80">ASAP Delivery</span>
+<span class="text-headline-sm font-headline-sm">20 - 30 min</span>
+<span class="text-label-sm opacity-90">Fastest available</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="delivery_time" type="radio"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary text-on-surface transition-all flex flex-col gap-space-xs shadow-sm">
+<span class="text-label-md font-label-md opacity-80">Schedule</span>
+<span class="text-headline-sm font-headline-sm">12:30 - 12:45 PM</span>
+<span class="text-label-sm opacity-90">Today</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="delivery_time" type="radio"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary text-on-surface transition-all flex flex-col gap-space-xs shadow-sm">
+<span class="text-label-md font-label-md opacity-80">Schedule</span>
+<span class="text-headline-sm font-headline-sm">01:00 - 01:15 PM</span>
+<span class="text-label-sm opacity-90">Today</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Section 3: Payment Method Selection -->
+<div class="bg-surface-container-low p-space-lg rounded-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">payments</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Payment Method</h2>
+</div>
+<button class="text-primary text-label-lg font-label-lg hover:underline">+ Add Card</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Credit Card Option -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="payment_method" type="radio"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:ring-2 peer-checked:ring-primary transition-all flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">credit_card</span>
+</div>
+<div>
+<span class="text-headline-sm font-headline-sm text-on-surface block">Mastercard ending in •••• 4892</span>
+<span class="text-body-sm text-on-surface-variant">Expires 08/26</span>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline flex items-center justify-center peer-checked:border-primary peer-checked:bg-primary">
+<div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+</div>
+</label>
+<!-- Apple Pay Option -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="payment_method" type="radio"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:ring-2 peer-checked:ring-primary transition-all flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</div>
+<div>
+<span class="text-headline-sm font-headline-sm text-on-surface block">Apple Pay</span>
+<span class="text-body-sm text-on-surface-variant">Instant biometric checkout</span>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline flex items-center justify-center peer-checked:border-primary peer-checked:bg-primary">
+<div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+</div>
+</label>
+<!-- Cash on Delivery -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="payment_method" type="radio"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:ring-2 peer-checked:ring-primary transition-all flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">money</span>
+</div>
+<div>
+<span class="text-headline-sm font-headline-sm text-on-surface block">Cash on Delivery</span>
+<span class="text-body-sm text-on-surface-variant">Please keep exact change ready</span>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline flex items-center justify-center peer-checked:border-primary peer-checked:bg-primary">
+<div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Right Column: Order Summary (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low p-space-lg rounded-lg flex flex-col gap-space-md shadow-sm sticky top-24">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-md">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Order Summary</h2>
+<span class="text-label-lg font-label-lg text-primary bg-primary-fixed/50 px-space-sm py-1 rounded-full">3 Items</span>
+</div>
+<!-- Items List -->
+<div class="flex flex-col gap-space-md max-h-64 overflow-y-auto pr-space-xs" id="checkout-items-list"></div>
+
+<!-- Promo Code Input -->
+<div class="flex items-center gap-space-sm pt-space-sm">
+<div class="relative flex-1">
+<input class="w-full bg-surface-container-lowest text-on-surface px-space-md py-2 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Promo code (e.g., TASTY20)" type="text"/>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-2 rounded-full text-label-lg font-label-lg transition-colors">Apply</button>
+</div>
+<!-- Cost Breakdown -->
+<div class="flex flex-col gap-space-xs pt-space-sm border-t border-outline-variant/30 text-body-md">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal</span>
+<span class="font-medium text-on-surface" id="checkout-subtotal">$0.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Delivery Fee</span>
+<span class="font-medium text-on-surface" id="checkout-delivery">$0.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Service & Tax (8.25%)</span>
+<span class="font-medium text-on-surface" id="checkout-tax">$0.00</span>
+</div>
+<div class="flex justify-between text-headline-lg font-headline-lg text-on-surface pt-space-sm border-t border-outline-variant/30 mt-space-xs">
+<span>Total Amount</span>
+<span class="text-primary" id="checkout-total">$0.00</span>
+</div>
+</div>
+<!-- Secure Place Order CTA Button -->
+<button class="w-full mt-space-sm bg-primary hover:bg-primary-container text-on-primary py-4 rounded-full text-headline-sm font-headline-sm flex items-center justify-center gap-space-sm shadow-lg transition-all transform active:scale-95 cursor-pointer" id="btn-place-order" onclick="placeOrder()">
+<span class="material-symbols-outlined text-[20px]">lock_open</span>
+<span id="place-order-label">Place Secure Order</span>
+</button>
+<p class="text-label-sm text-center text-outline mt-space-xs">
+          By placing your order, you agree to TastingRoom's Terms of Service and Privacy Policy.
+        </p>
+</div>
+</div>
+</div>
+</div></main></div>
+<script src="../api.js"></script>
+<script>
+  async function initCheckout() {
+    // 1. Sync User Address
+    try {
+      const user = await API.getUser(1);
+      if (user && user.address) {
+        document.getElementById('checkout-address').innerText = user.address;
+      }
+    } catch (_) {}
+
+    // 2. Render Cart Items
+    const cart = Cart.getData();
+    const list = document.getElementById('checkout-items-list');
+    
+    if (cart.items.length === 0) {
+      list.innerHTML = `<p class="text-body-md text-on-surface-variant py-4">No items in cart. Please add items before checking out.</p>`;
+      document.getElementById('btn-place-order').disabled = true;
+      document.getElementById('btn-place-order').classList.add('opacity-50', 'cursor-not-allowed');
+      return;
+    }
+
+    list.innerHTML = '';
+    cart.items.forEach(item => {
+      const itemEl = document.createElement('div');
+      itemEl.className = 'flex items-center gap-space-md py-2 border-b border-surface-container';
+      itemEl.innerHTML = `
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between">
+            <span class="text-headline-sm font-headline-sm text-on-surface truncate">${item.name}</span>
+            <span class="text-body-md font-bold text-on-surface">$${(item.price * item.quantity).toFixed(2)}</span>
+          </div>
+          <span class="text-label-sm text-outline">Qty: ${item.quantity} × $${item.price.toFixed(2)}</span>
+        </div>
+      `;
+      list.appendChild(itemEl);
+    });
+
+    const subtotal = Cart.getSubtotal();
+    const delivery = Cart.getDeliveryFee();
+    const tax = Cart.getTax();
+    const total = Cart.getTotal();
+
+    document.getElementById('checkout-subtotal').innerText = `$${subtotal.toFixed(2)}`;
+    document.getElementById('checkout-delivery').innerText = `$${delivery.toFixed(2)}`;
+    document.getElementById('checkout-tax').innerText = `$${tax.toFixed(2)}`;
+    document.getElementById('checkout-total').innerText = `$${total.toFixed(2)}`;
+    document.getElementById('place-order-label').innerText = `Place Secure Order • $${total.toFixed(2)}`;
+  }
+
+  async function placeOrder() {
+    const cart = Cart.getData();
+    if (cart.items.length === 0) {
+      showToast('Your cart is empty!', 'error');
+      return;
+    }
+
+    const btn = document.getElementById('btn-place-order');
+    btn.disabled = true;
+    btn.innerHTML = `
+      <span class="material-symbols-outlined animate-spin text-[20px]">sync</span>
+      <span>Processing Order...</span>
+    `;
+
+    const address = document.getElementById('checkout-address').innerText.trim();
+
+    const orderPayload = {
+      user_id: 1,
+      restaurant_id: cart.restaurantId || 1,
+      delivery_address: address,
+      items: cart.items.map(i => ({
+        food_item_id: i.id,
+        quantity: i.quantity
+      }))
+    };
+
+    try {
+      const createdOrder = await API.createOrder(orderPayload);
+      showToast('Order placed successfully! Redirecting...');
+      Cart.clear();
+      setTimeout(() => {
+        window.location.href = `../order_status/code.html?order_id=${createdOrder.id}`;
+      }, 1000);
+    } catch (err) {
+      console.error(err);
+      showToast(err.message || 'Failed to place order. Please check inputs.', 'error');
+      btn.disabled = false;
+      btn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px]">lock_open</span>
+        <span>Place Secure Order • $${Cart.getTotal().toFixed(2)}</span>
+      `;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initCheckout);
+</script>
+</body></html>

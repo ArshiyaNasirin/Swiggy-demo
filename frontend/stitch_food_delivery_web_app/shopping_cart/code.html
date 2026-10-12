@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface-variant": "#59413a", "primary-container": "#cb491b", "inverse-primary": "#ffb59e", "tertiary-container": "#008376", "background": "#fbf9f5", "secondary": "#8e4e14", "inverse-surface": "#30312e", "secondary-fixed-dim": "#ffb780", "on-error-container": "#93000a", "surface-bright": "#fbf9f5", "surface-container-low": "#f5f3ef", "on-secondary-container": "#783d01", "tertiary-fixed": "#8cf5e4", "on-secondary": "#ffffff", "on-tertiary-container": "#f4fffb", "on-tertiary": "#ffffff", "primary-fixed": "#ffdbd0", "surface-container-highest": "#e4e2de", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "outline": "#8d7169", "tertiary": "#00685d", "secondary-fixed": "#ffdcc4", "surface-container": "#efeeea", "primary-fixed-dim": "#ffb59e", "surface-container-high": "#eae8e4", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005048", "outline-variant": "#e1bfb5", "inverse-on-surface": "#f2f0ed", "tertiary-fixed-dim": "#6fd8c8", "secondary-container": "#ffab69", "on-tertiary-fixed": "#00201c", "primary": "#a93101", "on-background": "#1b1c1a", "on-primary-fixed": "#3a0b00", "surface": "#fbf9f5", "on-surface": "#1b1c1a", "on-secondary-fixed": "#2f1400", "surface-variant": "#e4e2de", "surface-dim": "#dbdad6", "error": "#ba1a1a", "on-secondary-fixed-variant": "#6f3800", "on-primary-fixed-variant": "#842400", "surface-tint": "#ac3403" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1.25rem" }, "fontFamily": { "display-lg": ["Cambria"], "headline-sm": ["Cambria"], "body-lg": ["Cambria"], "label-sm": ["Cambria"], "label-md": ["Cambria"], "headline-md": ["Cambria"], "headline-lg": ["Cambria"], "body-md": ["Cambria"], "display-lg-mobile": ["Cambria"], "label-lg": ["Cambria"], "body-sm": ["Cambria"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="FoodDelivery Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlTqOVwsq6CBRdWFdaBIqfrNpcNlEYXtlwjIjTHBMDo0Vgy1iMX4bRK7D0dE6G27ancw7qhYYyjz7OR5tSlj6TAOxAGbOEjAiGukdk0LZ7Ekqdue1u_mIJ7gOCtTRfrSwTvsmEMQdQAPJUDvpOZhfhaxDcQK8seS8p5jhrtrxY8U0HG5wCZKdUsr52OA1mv10vf_JNjbduIAmVRP2Xy7TJzBiPv-Z7UGmC5MpIopYv"/><span class="text-headline-md font-headline-md text-primary">TastingRoom</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-full"><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-md rounded-full" data-path="home" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">home</span>Home</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="restaurants" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">storefront</span>Restaurants</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">receipt_long</span>Orders</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">person</span>Profile</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-full text-on-surface-variant text-label-lg cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span>Downtown, 5th Ave</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="relative flex-1"><span class="absolute inset-y-0 left-0 flex items-center pl-space-md pointer-events-none material-symbols-outlined text-outline text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface pl-10 pr-space-md py-2 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search dishes, restaurants..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-primary text-on-primary text-label-sm rounded-full flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-24">
+<!-- Top Banner / Title area -->
+<div class="px-space-lg pt-space-lg pb-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="text-label-lg text-primary uppercase tracking-wider mb-space-xs font-headline-md">Review Order</div>
+<h1 class="text-display-lg-mobile md:text-display-lg text-on-surface">Your Culinary Selection</h1>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-full w-fit">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="text-headline-sm text-on-surface">Trattoria Bella Roma</span>
+<span class="text-body-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">1.2 miles away</span>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="px-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Itemized List & Special Instructions (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Items Container -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col gap-space-lg shadow-sm">
+<div class="flex items-center justify-between">
+<h2 class="text-headline-md text-on-surface" id="cart-items-heading">Items in Cart (0)</h2>
+<button class="text-label-md text-primary hover:underline" onclick="window.location.href='../restaurants/code.html'">Add more items</button>
+</div>
+<div class="flex flex-col gap-space-md" id="cart-items-container"></div>
+
+</div>
+<!-- Special Instructions Card -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">edit_note</span>
+<h3 class="text-headline-sm text-on-surface">Special Instructions for Restaurant</h3>
+</div>
+<textarea class="w-full h-24 bg-surface-container-lowest text-on-surface p-space-md rounded-lg text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none" placeholder="e.g. Please extra crispy crust, no cutlery needed..."></textarea>
+</div>
+<!-- Promo Code Card -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">local_offer</span>
+<h3 class="text-headline-sm text-on-surface">Promo Code</h3>
+</div>
+<div class="flex gap-space-sm">
+<input class="flex-1 bg-surface-container-lowest text-on-surface px-space-md py-2 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Enter coupon code (e.g. TASTY20)" type="text"/>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-headline-sm px-space-lg py-2 rounded-full transition-colors">Apply</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Summary & Checkout (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col gap-space-lg shadow-md sticky top-24">
+<h3 class="text-headline-md text-on-surface">Order Summary</h3>
+<!-- Tip Selector -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-center">
+<span class="text-label-lg text-on-surface">Courier Tip</span>
+<span class="text-body-sm text-primary font-headline-sm" id="selected-tip-label">15% ($11.93)</span>
+</div>
+<div class="grid grid-cols-4 gap-space-xs">
+<button class="tip-btn py-2 rounded-full bg-surface-container-lowest text-on-surface font-headline-sm text-label-md hover:bg-surface-container-high transition-all" onclick="setTip(10, this)">10%</button>
+<button class="tip-btn py-2 rounded-full bg-primary text-on-primary font-headline-sm text-label-md shadow-sm transition-all" onclick="setTip(15, this)">15%</button>
+<button class="tip-btn py-2 rounded-full bg-surface-container-lowest text-on-surface font-headline-sm text-label-md hover:bg-surface-container-high transition-all" onclick="setTip(20, this)">20%</button>
+<button class="tip-btn py-2 rounded-full bg-surface-container-lowest text-on-surface font-headline-sm text-label-md hover:bg-surface-container-high transition-all" onclick="setCustomTip()">Custom</button>
+</div>
+</div>
+<div class="w-full h-[1px] bg-surface-container-high"></div>
+<!-- Breakdown list -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span id="subtotal-label">Subtotal (0 items)</span>
+<span class="text-on-surface font-headline-sm" id="cart-subtotal">$0.00</span>
+</div>
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span>Delivery Fee</span>
+<span class="text-on-surface font-headline-sm" id="cart-delivery">$0.00</span>
+</div>
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span>Estimated Tax (8.25%)</span>
+<span class="text-on-surface font-headline-sm" id="cart-tax">$0.00</span>
+</div>
+</div>
+<div class="w-full h-[1px] bg-surface-container-high"></div>
+<!-- Total -->
+<div class="flex justify-between items-baseline">
+<div>
+<div class="text-headline-md text-on-surface">Total</div>
+<div class="text-body-sm text-on-surface-variant">Including taxes and delivery</div>
+</div>
+<div class="text-display-lg-mobile text-primary" id="total-display">$0.00</div>
+</div>
+<!-- Delivery ETA Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+</div>
+<div>
+<div class="text-headline-sm text-on-surface">Estimated Delivery</div>
+<div class="text-body-sm text-on-surface-variant">25 - 35 mins • Priority Courier</div>
+</div>
+</div>
+<!-- Proceed to Checkout CTA -->
+<button class="w-full bg-primary text-on-primary py-4 rounded-full font-headline-md text-headline-sm flex items-center justify-center gap-space-sm hover:bg-primary-container transition-all shadow-lg shadow-primary/20 hover:scale-[1.01] active:scale-[0.99] cursor-pointer" onclick="proceedToCheckout()">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div>
+<script src="../api.js"></script>
+<script>
+  function renderCart() {
+    const cart = Cart.getData();
+    const container = document.getElementById('cart-items-container');
+    const heading = document.getElementById('cart-items-heading');
+    const count = Cart.getCount();
+
+    heading.innerText = `Items in Cart (${count})`;
+
+    if (count === 0) {
+      container.innerHTML = `
+        <div class="bg-surface-container-lowest p-space-xl rounded-xl text-center flex flex-col items-center gap-space-md">
+          <span class="material-symbols-outlined text-primary text-[48px]">shopping_basket</span>
+          <h3 class="text-headline-md text-on-surface">Your cart is currently empty</h3>
+          <p class="text-body-md text-on-surface-variant">Add some delicious dishes from our curated restaurant menus!</p>
+          <button class="bg-primary text-on-primary px-space-lg py-3 rounded-full text-label-lg font-headline-sm" onclick="window.location.href='../restaurants/code.html'">
+            Explore Restaurants
+          </button>
+        </div>
+      `;
+    } else {
+      container.innerHTML = '';
+      cart.items.forEach(item => {
+        const itemRow = document.createElement('div');
+        itemRow.className = 'flex gap-space-md items-center bg-surface-container-lowest p-space-md rounded-lg shadow-sm';
+        itemRow.innerHTML = `
+          <div class="flex-1 min-w-0">
+            <h3 class="text-headline-sm text-on-surface truncate">${item.name}</h3>
+            <p class="text-body-sm text-on-surface-variant line-clamp-1">${item.description || 'Freshly prepared'}</p>
+            <div class="text-headline-sm text-primary mt-space-xs">$${(item.price * item.quantity).toFixed(2)} <span class="text-label-sm text-outline font-normal">($${item.price.toFixed(2)} each)</span></div>
+          </div>
+          <div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-full">
+            <button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" onclick="Cart.updateQty(${item.id}, -1); renderCart();">
+              <span class="material-symbols-outlined text-[16px]">remove</span>
+            </button>
+            <span class="w-6 text-center font-headline-sm text-on-surface">${item.quantity}</span>
+            <button class="w-7 h-7 rounded-full bg-primary text-on-primary hover:bg-primary-container flex items-center justify-center transition-colors" onclick="Cart.updateQty(${item.id}, 1); renderCart();">
+              <span class="material-symbols-outlined text-[16px]">add</span>
+            </button>
+          </div>
+        `;
+        container.appendChild(itemRow);
+      });
+    }
+
+    const subtotal = Cart.getSubtotal();
+    const delivery = Cart.getDeliveryFee();
+    const tax = Cart.getTax();
+    const total = Cart.getTotal();
+
+    document.getElementById('subtotal-label').innerText = `Subtotal (${count} items)`;
+    document.getElementById('cart-subtotal').innerText = `$${subtotal.toFixed(2)}`;
+    document.getElementById('cart-delivery').innerText = `$${delivery.toFixed(2)}`;
+    document.getElementById('cart-tax').innerText = `$${tax.toFixed(2)}`;
+    document.getElementById('total-display').innerText = `$${total.toFixed(2)}`;
+
+    // Top pill restaurant info
+    const pill = document.querySelector('header .bg-surface-container-low');
+    if (cart.restaurantName) {
+      document.querySelector('main .bg-surface-container-low .text-headline-sm').innerText = cart.restaurantName;
+    }
+  }
+
+  function proceedToCheckout() {
+    if (Cart.getCount() === 0) {
+      showToast('Your cart is empty! Add items first.', 'error');
+      return;
+    }
+    window.location.href = '../checkout/code.html';
+  }
+
+  document.addEventListener('DOMContentLoaded', renderCart);
+</script>
+</body></html>

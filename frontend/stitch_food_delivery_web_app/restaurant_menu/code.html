@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface-variant": "#59413a", "primary-container": "#cb491b", "inverse-primary": "#ffb59e", "tertiary-container": "#008376", "background": "#fbf9f5", "secondary": "#8e4e14", "inverse-surface": "#30312e", "secondary-fixed-dim": "#ffb780", "on-error-container": "#93000a", "surface-bright": "#fbf9f5", "surface-container-low": "#f5f3ef", "on-secondary-container": "#783d01", "tertiary-fixed": "#8cf5e4", "on-secondary": "#ffffff", "on-tertiary-container": "#f4fffb", "on-tertiary": "#ffffff", "primary-fixed": "#ffdbd0", "surface-container-highest": "#e4e2de", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "outline": "#8d7169", "tertiary": "#00685d", "secondary-fixed": "#ffdcc4", "surface-container": "#efeeea", "primary-fixed-dim": "#ffb59e", "surface-container-high": "#eae8e4", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005048", "outline-variant": "#e1bfb5", "inverse-on-surface": "#f2f0ed", "tertiary-fixed-dim": "#6fd8c8", "secondary-container": "#ffab69", "on-tertiary-fixed": "#00201c", "primary": "#a93101", "on-background": "#1b1c1a", "on-primary-fixed": "#3a0b00", "surface": "#fbf9f5", "on-surface": "#1b1c1a", "on-secondary-fixed": "#2f1400", "surface-variant": "#e4e2de", "surface-dim": "#dbdad6", "error": "#ba1a1a", "on-secondary-fixed-variant": "#6f3800", "on-primary-fixed-variant": "#842400", "surface-tint": "#ac3403" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1.25rem" }, "fontFamily": { "display-lg": ["Cambria"], "headline-sm": ["Cambria"], "body-lg": ["Cambria"], "label-sm": ["Cambria"], "label-md": ["Cambria"], "headline-md": ["Cambria"], "headline-lg": ["Cambria"], "body-md": ["Cambria"], "display-lg-mobile": ["Cambria"], "label-lg": ["Cambria"], "body-sm": ["Cambria"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="FoodDelivery Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8scsdW1qgXbbdyv8yCFpXvIXpU4gKW5ShJ4XtykOWmHDn_TsBdKZhHejdD6BoaIRUG-s6RpAmmQbDHlm0bn3UuvX2QdvQNLw6RvimfY7LkIjvNAF1h3xX45avlK2lld_iPeX_lPKEHr5-Tv4dXeQ-cgR02slYZ3kBkwOq6Po4H4PfzBwEgn9HmVDdiSQHtBt9prMfKZ-Owb9VOfzY2wwW3VdHjM-sRiP-x-3rJyY4"/><span class="text-headline-md font-headline-md text-primary">TastingRoom</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-full"><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">home</span>Home</a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-md rounded-full" data-path="restaurants" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">storefront</span>Restaurants</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">receipt_long</span>Orders</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">person</span>Profile</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-full text-on-surface-variant text-label-lg cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span>Downtown, 5th Ave</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="relative flex-1"><span class="absolute inset-y-0 left-0 flex items-center pl-space-md pointer-events-none material-symbols-outlined text-outline text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface pl-10 pr-space-md py-2 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search dishes, restaurants..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-primary text-on-primary text-label-sm rounded-full flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<div class="relative w-full h-[320px] bg-cover bg-center" data-alt="A cinematic wide-angle shot of a rustic artisanal Italian trattoria kitchen filled with copper pots, warm amber pendant lighting, fresh basil leaves strewn on a marble counter, and a wood-fired brick oven glowing softly in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEaJL8TGwzAYXbu7-n6_t7pJfjbSm8waQXgVFFmQfs2wQ4_oNiBc9w_c64UaL3ehCJxXED91yDv9wJHSKyOUaWq-LtZEdR22g5CKExlQDa1TlBS3VueQGsJInKDsjuLY_nWn4R1uC7nHkaWlJoL0snTLfZd35O8oV6WdYNfUhCAXxfHI8dnJD3iln3QAGnKyVDd3nOxqp00Qd_yIVuTxCRfJ6zUDYEmGSutg0eVKqd')">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto w-full px-space-lg -mt-24 relative z-10 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="bg-primary-container text-on-primary-container text-label-md px-3 py-1 rounded-full font-headline-sm">Italian • Wood-fired • Pasta</span>
+<span class="bg-secondary-container text-on-secondary-container text-label-md px-3 py-1 rounded-full font-headline-sm">20-30 min</span>
+</div>
+<h1 class="text-display-lg text-on-surface">Trattoria Bella Roma</h1>
+<p class="text-body-md text-on-surface-variant max-w-xl">Authentic handcrafted pastas and Neapolitan pizzas baked in a 400-degree wood-fired oven using imported Campanian ingredients.</p>
+</div>
+<div class="flex items-center gap-space-lg bg-surface-container-lowest p-space-md rounded-2xl shadow-sm self-start md:self-auto">
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-headline-md font-headline-md">4.9</span>
+</div>
+<span class="text-body-sm text-on-surface-variant">1,240+ reviews</span>
+</div>
+<div class="w-[1px] h-10 bg-surface-container-highest"></div>
+<div class="flex flex-col items-center">
+<span class="text-headline-md font-headline-md text-on-surface">$0.99</span>
+<span class="text-body-sm text-on-surface-variant">Delivery Fee</span>
+</div>
+</div>
+</div>
+<div class="sticky top-16 z-30 bg-surface/90 backdrop-blur-md py-space-md -mx-space-lg px-space-lg flex gap-space-sm overflow-x-auto no-scrollbar items-center">
+<a class="px-space-lg py-2 rounded-full bg-primary text-on-primary font-headline-sm text-body-md whitespace-nowrap shadow-sm transition-all" href="#appetizers">Appetizers</a>
+<a class="px-space-lg py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-headline-sm text-body-md whitespace-nowrap transition-all" href="#mains">Mains & Pasta</a>
+<a class="px-space-lg py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-headline-sm text-body-md whitespace-nowrap transition-all" href="#pizzas">Wood-fired Pizzas</a>
+<a class="px-space-lg py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-headline-sm text-body-md whitespace-nowrap transition-all" href="#drinks">Drinks</a>
+<a class="px-space-lg py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-headline-sm text-body-md whitespace-nowrap transition-all" href="#desserts">Desserts</a>
+</div>
+<div class="flex flex-col gap-space-xl mt-space-md">
+<section class="flex flex-col gap-space-md scroll-mt-28" id="appetizers">
+<h2 class="text-headline-lg text-on-surface font-headline-lg">Appetizers</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low hover:bg-surface-container transition-all rounded-2xl overflow-hidden shadow-sm flex flex-col cursor-pointer group" onclick="openModal('Bruschetta al Pomodoro', '12.50', 'Grilled artisanal sourdough topped with vine-ripened San Marzano tomatoes, fresh garlic, basil, and extra virgin olive oil.')">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Close up food photography of crispy artisanal bruschetta topped with vibrant red diced tomatoes, fresh green basil leaves, and a glossy drizzle of golden olive oil on a rustic ceramic plate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXUtnzt5Ixb44wgexJpd4Vaq20IULi70OWeNbIsgUtZBBB_fDvqS-Z4kbOP853mFf9PBmh7iisztJ5q1mfCaAlWaK6cIUuYTq_vxLzdj2OKcAwu57BRJbNM2vAhBCy-yKqqBjwQfv7sCIzjgn4Y8471PGYLOeLPJTidfl1A632Q5_YDCZyzkQy4UEFM5NfM8FakIQCztcQv3NsjYiju6TYQIhASu-EgYo95iulxuTE')"></div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-start">
+<h3 class="text-headline-sm text-on-surface font-headline-sm">Bruschetta al Pomodoro</h3>
+<span class="text-headline-sm text-primary font-headline-sm">$12.50</span>
+</div>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">Grilled artisanal sourdough topped with vine-ripened San Marzano tomatoes, fresh garlic, basil, and extra virgin olive oil.</p>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-container rounded-full font-label-lg flex items-center justify-center gap-space-xs hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add to Cart
+              </button>
+</div>
+</div>
+<div class="bg-surface-container-low hover:bg-surface-container transition-all rounded-2xl overflow-hidden shadow-sm flex flex-col cursor-pointer group" onclick="openModal('Arancini Siciliani', '14.00', 'Crispy golden saffron risotto balls stuffed with rich ragù, melted mozzarella, and green peas, served with house marinara.')">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Golden fried Italian rice arancini balls dusted with parmesan cheese, cut open to reveal gooey melted mozzarella and rich beef ragu filling, shot on dark slate background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOgd6k0PKV_DgyqKLcvZAknmFz5fHimQ2KcbHDuLTr4YXX9_2vBnPNLe0s8Csurwk8FM2eLqfF7nkQh9KFSLvY7kcrNKBED1l7CpbR6FFl0CIXO6ykCWUDIfPGTGmiYR76hZuCTSpOd5q04xEmsEqgqPmduDT21rtjEAXImoATVRaZyzoK3-sppxYFVpwy6vnq2cmFU3TGRko48d2JpMVW4Ak9RbCU5xfoef3GH9ow')"></div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-start">
+<h3 class="text-headline-sm text-on-surface font-headline-sm">Arancini Siciliani</h3>
+<span class="text-headline-sm text-primary font-headline-sm">$14.00</span>
+</div>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">Crispy golden saffron risotto balls stuffed with rich ragù, melted mozzarella, and green peas, served with house marinara.</p>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-container rounded-full font-label-lg flex items-center justify-center gap-space-xs hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add to Cart
+              </button>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md scroll-mt-28" id="mains">
+<h2 class="text-headline-lg text-on-surface font-headline-lg">Mains & Pasta</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low hover:bg-surface-container transition-all rounded-2xl overflow-hidden shadow-sm flex flex-col cursor-pointer group" onclick="openModal('Handmade Tagliatelle Bolognese', '22.00', 'Slow-cooked traditional beef and pork ragù simmered for six hours, tossed with fresh egg tagliatelle and Parmigiano-Reggiano.')">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A steaming bowl of fresh handmade tagliatelle pasta coated in a rich, glossy meat bolognese sauce, garnished with grated parmesan cheese and a single sprig of parsley." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMWZ-DJdrl5lsIKRUpZjFbSZQojJaJ2uLCgeAWk3Y-x-D41FkqrqMSnQk7CkHTnZMCJvQ_TguBlVQQ1i2NlWX6yGlpvnGgDnm4WHchRFPi844U7Zyw9P51y8TPisKqpQiDht82dtFZuu7i2z66I_uYyPM1-1_93ssAWoukLyBnygcoDuLydj81vbjKK0CNTgwJ1OnhY_oHOuODE08dfPiNjJjQMCoUseKcmeVi6sfr')"></div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-start">
+<h3 class="text-headline-sm text-on-surface font-headline-sm">Handmade Tagliatelle Bolognese</h3>
+<span class="text-headline-sm text-primary font-headline-sm">$22.00</span>
+</div>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">Slow-cooked traditional beef and pork ragù simmered for six hours, tossed with fresh egg tagliatelle and Parmigiano-Reggiano.</p>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-container rounded-full font-label-lg flex items-center justify-center gap-space-xs hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add to Cart
+              </button>
+</div>
+</div>
+<div class="bg-surface-container-low hover:bg-surface-container transition-all rounded-2xl overflow-hidden shadow-sm flex flex-col cursor-pointer group" onclick="openModal('Truffle Gnocchi al Forno', '24.50', 'Potato gnocchi baked in a velvety black truffle cream sauce with wild mushrooms, fontina cheese, and crispy breadcrumbs.')">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Baked potato gnocchi in a bubbling white truffle cream sauce with sautéed mushrooms and melted cheese inside a warm earthenware baking dish." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANXdSWBUphu69Sy9qjjlCWjvHiQkbPBKQZiN4zlYxvLnEcAs3uTxprRJBXngZJF3WEW2xRFK9rMAQX4_R5p6Q6KXLEFnOQc3EF8zzh_Rf2da6bt-HDIlHBiPhPPMB_hQk2mvZ5beIXrlyEaStvoP7bxvVTLES4gYYgrr3ytgPcw3kaGvYSIiVdDzmFL9ON_sX3A8bXIiNZ4aZP96Q3OWOWlrSF0Gi9uYmp4AFfDKCc')"></div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-start">
+<h3 class="text-headline-sm text-on-surface font-headline-sm">Truffle Gnocchi al Forno</h3>
+<span class="text-headline-sm text-primary font-headline-sm">$24.50</span>
+</div>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">Potato gnocchi baked in a velvety black truffle cream sauce with wild mushrooms, fontina cheese, and crispy breadcrumbs.</p>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-container rounded-full font-label-lg flex items-center justify-center gap-space-xs hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add to Cart
+              </button>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md scroll-mt-28" id="pizzas">
+<h2 class="text-headline-lg text-on-surface font-headline-lg">Wood-fired Pizzas</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low hover:bg-surface-container transition-all rounded-2xl overflow-hidden shadow-sm flex flex-col cursor-pointer group" onclick="openModal('Margherita Verace', '19.00', 'San Marzano tomatoes, fresh fior di latte mozzarella, fresh basil, and extra virgin olive oil on a 48-hour fermented crust.')">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Neapolitan margherita pizza straight from the wood-fired oven with blistered charred crust, melted mozzarella patches, and fresh basil leaves." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBo8biqIKE9JO2uYb_WOqM8j_WUkU-zCdUQvmQeOxMSWL7G7MS33z89jNNXxHBpC1rbXfRkGPezCBBs5wTTAGeD-Xma6MMhZnphI3P8EVd9aN9G-OwBiTX9wRAFMgfgOu0iZN5pXDhTUIBQtWvkq4Xpe8udW8raLaoVys9RMJu7mrFMJgiKXTdmnj84xQ5GAUu-Drrx791WL1rAtm9d3tC01ASYIA6ed2jB-aN04PJc')"></div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-start">
+<h3 class="text-headline-sm text-on-surface font-headline-sm">Margherita Verace</h3>
+<span class="text-headline-sm text-primary font-headline-sm">$19.00</span>
+</div>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">San Marzano tomatoes, fresh fior di latte mozzarella, fresh basil, and extra virgin olive oil on a 48-hour fermented crust.</p>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-container rounded-full font-label-lg flex items-center justify-center gap-space-xs hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add to Cart
+              </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-md" id="customization-modal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+<div class="relative h-48 bg-cover bg-center" data-alt="Delicious gourmet italian dish featured in customization modal with vibrant lighting and professional food styling." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqEeNzLTQVXyMVa2Juy9Ag3XlQaPd7_NilhasDB9mxqFfulHjgh-SM7TzVHybGDBkGQL81Cmn3TnBC-Z06bBGh8SvRdccwG_g0Bef-i0Bx0-3XkHkXB2-N6AEAbu4HOFk3p0qG8RR1bIf0HtdWgIlew161V7auCpIaAPzFdMv77-8XkwNCIfT66GjzHCuMxrhM3gEs6Nlvw4r9XuD2Pf6OeZLBjerCVFFHueQlziEV')">
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-surface transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md overflow-y-auto">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-headline-lg text-on-surface font-headline-lg" id="modal-title">Dish Title</h3>
+<p class="text-body-md text-on-surface-variant mt-1" id="modal-desc">Dish description goes here...</p>
+</div>
+<span class="text-headline-lg text-primary font-headline-lg" id="modal-price">$0.00</span>
+</div>
+<div class="w-full h-[1px] bg-surface-container"></div>
+<div class="flex flex-col gap-space-sm">
+<label class="text-headline-sm font-headline-sm text-on-surface">Choose Size</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low cursor-pointer border-2 border-primary">
+<span class="text-body-md font-body-md">Regular Portion</span>
+<span class="text-body-sm text-on-surface-variant">Included</span>
+</label>
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low cursor-pointer border-2 border-transparent hover:border-outline-variant">
+<span class="text-body-md font-body-md">Family Size (+50%)</span>
+<span class="text-body-sm text-primary font-headline-sm">+$8.00</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="text-headline-sm font-headline-sm text-on-surface">Extra Toppings</label>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-space-sm rounded-xl hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-5 h-5 rounded accent-primary" type="checkbox"/>
+<span class="text-body-md">Extra Fior di Latte Mozzarella</span>
+</div>
+<span class="text-body-sm text-on-surface-variant">+$3.00</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-5 h-5 rounded accent-primary" type="checkbox"/>
+<span class="text-body-md">Organic Truffle Oil Drizzle</span>
+</div>
+<span class="text-body-sm text-on-surface-variant">+$4.50</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="text-headline-sm font-headline-sm text-on-surface">Special Instructions</label>
+<textarea class="w-full bg-surface-container-low p-space-md rounded-2xl text-body-md focus:outline-none focus:ring-2 focus:ring-primary/25 h-20 resize-none" placeholder="Add any specific requests or allergy notes..."></textarea>
+</div>
+<div class="pt-space-sm">
+<button class="w-full py-4 bg-primary text-on-primary rounded-full font-headline-sm text-headline-sm shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-space-sm" onclick="closeModal()">
+<span>Add to Order</span>
+<span>•</span>
+<span id="modal-cta-price">$12.50</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 w-full max-w-2xl px-space-lg z-40" id="cart-float-bar">
+<div class="bg-inverse-surface/90 backdrop-blur-xl text-inverse-on-surface p-space-md rounded-full shadow-2xl flex items-center justify-between">
+<div class="flex items-center gap-space-md pl-space-sm cursor-pointer" onclick="window.location.href='../shopping_cart/code.html'">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm" id="float-cart-count">0</div>
+<div class="flex flex-col">
+<span class="text-headline-sm" id="float-cart-restaurant">Your Cart</span>
+<span class="text-body-sm text-inverse-on-surface/70" id="float-cart-items-label">0 items in cart</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-headline-md font-headline-md text-inverse-primary" id="float-cart-total">$0.00</span>
+<button class="px-space-lg py-3 bg-primary text-on-primary rounded-full font-headline-sm hover:opacity-90 transition-opacity" onclick="window.location.href='../shopping_cart/code.html'">Checkout</button>
+</div>
+</div>
+</div>
+</div></main></div>
+<script src="../api.js"></script>
+<script>
+  let currentRestaurant = null;
+  let currentFoods = [];
+  let selectedFood = null;
+
+  function updateFloatingCart() {
+    const count = Cart.getCount();
+    const total = Cart.getTotal();
+    const cart = Cart.getData();
+    
+    document.getElementById('float-cart-count').innerText = count;
+    document.getElementById('float-cart-restaurant').innerText = cart.restaurantName || (currentRestaurant ? currentRestaurant.name : 'Your Cart');
+    document.getElementById('float-cart-items-label').innerText = `${count} item${count === 1 ? '' : 's'} in cart`;
+    document.getElementById('float-cart-total').innerText = `$${total.toFixed(2)}`;
+    
+    const bar = document.getElementById('cart-float-bar');
+    if (count === 0) {
+      bar.classList.add('opacity-0', 'pointer-events-none');
+    } else {
+      bar.classList.remove('opacity-0', 'pointer-events-none');
+    }
+  }
+
+  function openModal(title, price, desc, foodId) {
+    selectedFood = currentFoods.find(f => f.id === foodId) || { id: foodId, name: title, price: parseFloat(price), description: desc };
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-price').innerText = '$' + parseFloat(price).toFixed(2);
+    document.getElementById('modal-cta-price').innerText = '$' + parseFloat(price).toFixed(2);
+    document.getElementById('modal-desc').innerText = desc || '';
+    const modal = document.getElementById('customization-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('customization-modal');
+    modal.classList.remove('flex');
+    modal.classList.add('hidden');
+  }
+
+  function addModalItemToCart() {
+    if (selectedFood && currentRestaurant) {
+      Cart.addItem(selectedFood, currentRestaurant.id, currentRestaurant.name);
+      updateFloatingCart();
+    }
+    closeModal();
+  }
+
+  async function loadMenu() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const restaurantId = parseInt(urlParams.get('id')) || 1;
+
+    try {
+      currentRestaurant = await API.getRestaurant(restaurantId);
+      if (currentRestaurant) {
+        document.querySelector('h1').innerText = currentRestaurant.name;
+        const descP = document.querySelector('p.text-on-surface-variant');
+        if (descP) descP.innerText = `${currentRestaurant.address} • Phone: ${currentRestaurant.phone || 'Available online'}`;
+      }
+
+      currentFoods = await API.getFoods(restaurantId);
+      if (currentFoods && currentFoods.length > 0) {
+        const sectionsContainer = document.querySelector('main .max-w-7xl .flex.flex-col.gap-space-xl');
+        if (sectionsContainer) {
+          sectionsContainer.innerHTML = `
+            <section class="flex flex-col gap-space-md">
+              <h2 class="text-headline-lg text-on-surface font-headline-lg">Chef's Menu</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="dynamic-menu-grid"></div>
+            </section>
+          `;
+          const grid = document.getElementById('dynamic-menu-grid');
+          currentFoods.forEach(food => {
+            const card = document.createElement('div');
+            card.className = 'bg-surface-container-low hover:bg-surface-container transition-all rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between p-space-md';
+            card.innerHTML = `
+              <div class="flex flex-col gap-space-xs mb-space-md">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-headline-sm text-on-surface font-headline-sm">${food.name}</h3>
+                  <span class="text-headline-sm text-primary font-headline-sm">$${food.price.toFixed(2)}</span>
+                </div>
+                <p class="text-body-sm text-on-surface-variant line-clamp-3">${food.description || 'Prepared fresh with high quality ingredients.'}</p>
+              </div>
+              <button class="w-full py-2 bg-primary-container text-on-primary-container rounded-full font-label-lg flex items-center justify-center gap-space-xs hover:opacity-90 transition-opacity" onclick="Cart.addItem({ id: ${food.id}, name: '${food.name.replace(/'/g, "\\'")}', price: ${food.price}, description: '${(food.description || '').replace(/'/g, "\\'")}' }, ${currentRestaurant.id}, '${currentRestaurant.name.replace(/'/g, "\\'")}'); updateFloatingCart();">
+                <span class="material-symbols-outlined text-[16px]">add</span>
+                Add to Cart
+              </button>
+            `;
+            grid.appendChild(card);
+          });
+        }
+      }
+    } catch (e) {
+      console.warn('API fetch menu error:', e);
+    }
+
+    updateFloatingCart();
+  }
+
+  document.addEventListener('DOMContentLoaded', loadMenu);
+</script>
+</body></html>

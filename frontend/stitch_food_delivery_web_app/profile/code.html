@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface-variant": "#59413a", "primary-container": "#cb491b", "inverse-primary": "#ffb59e", "tertiary-container": "#008376", "background": "#fbf9f5", "secondary": "#8e4e14", "inverse-surface": "#30312e", "secondary-fixed-dim": "#ffb780", "on-error-container": "#93000a", "surface-bright": "#fbf9f5", "surface-container-low": "#f5f3ef", "on-secondary-container": "#783d01", "tertiary-fixed": "#8cf5e4", "on-secondary": "#ffffff", "on-tertiary-container": "#f4fffb", "on-tertiary": "#ffffff", "primary-fixed": "#ffdbd0", "surface-container-highest": "#e4e2de", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "outline": "#8d7169", "tertiary": "#00685d", "secondary-fixed": "#ffdcc4", "surface-container": "#efeeea", "primary-fixed-dim": "#ffb59e", "surface-container-high": "#eae8e4", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005048", "outline-variant": "#e1bfb5", "inverse-on-surface": "#f2f0ed", "tertiary-fixed-dim": "#6fd8c8", "secondary-container": "#ffab69", "on-tertiary-fixed": "#00201c", "primary": "#a93101", "on-background": "#1b1c1a", "on-primary-fixed": "#3a0b00", "surface": "#fbf9f5", "on-surface": "#1b1c1a", "on-secondary-fixed": "#2f1400", "surface-variant": "#e4e2de", "surface-dim": "#dbdad6", "error": "#ba1a1a", "on-secondary-fixed-variant": "#6f3800", "on-primary-fixed-variant": "#842400", "surface-tint": "#ac3403" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1.25rem" }, "fontFamily": { "display-lg": ["Cambria"], "headline-sm": ["Cambria"], "body-lg": ["Cambria"], "label-sm": ["Cambria"], "label-md": ["Cambria"], "headline-md": ["Cambria"], "headline-lg": ["Cambria"], "body-md": ["Cambria"], "display-lg-mobile": ["Cambria"], "label-lg": ["Cambria"], "body-sm": ["Cambria"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="FoodDelivery Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfc5QbhYIxrCB2PGhBh-nK_LSE7--k9QT1aL1zYZQC4xqPjb3zjae4lR4dGQTzgn_bo5_-GkFmBbh1S9OASNu-FZWtN4BlwIZQDGBhL0egNElu_jCw8nn7M13amyoeYCtJ9RWV0KAaU9pzCWoFZ4yVuv3jEjSjjcQr-ePXu-_XuhJWdYuPb0LnW18hTF1avfkLLa1o0wuGOcdylpvPr_qlArpGAm33nepdD8d1qCN0"/><span class="text-headline-md font-headline-md text-primary">TastingRoom</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-full"><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">home</span>Home</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="restaurants" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">storefront</span>Restaurants</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">receipt_long</span>Orders</a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-md rounded-full" data-path="profile" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">person</span>Profile</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-full text-on-surface-variant text-label-lg cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span>Downtown, 5th Ave</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="relative flex-1"><span class="absolute inset-y-0 left-0 flex items-center pl-space-md pointer-events-none material-symbols-outlined text-outline text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface pl-10 pr-space-md py-2 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search dishes, restaurants..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-primary text-on-primary text-label-sm rounded-full flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-24">
+<!-- Top Profile Banner Header -->
+<div class="relative w-full bg-surface-container-low px-space-xl py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-center gap-space-lg relative z-10">
+<div class="relative group">
+<div class="w-24 h-24 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-display-lg overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Close-up professional portrait of a happy smiling person with warm lighting against a soft cream background, culinary food lover aesthetic, high resolution photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtL2CA3s1bEuevMMTGUpw5VjElpnONaA0nmpE5Dy1pUKmrEaMxCh8chtKypwguQ0da7m8j8LqNcUzYfZcR8acFMIV0NcpbSW3I5xA1nNnVMUm-xfIMLd8kheEy4WylkaUHaukl9EfEMqlH9TUSf3YoxrqtDxNBvJmNYOBOFjUDn7AZSwTnfG9WXKoa8eAbCe2Ae0WSUcR5lOq2XcrMKMzLksHvDKrSntxJeLJYekv1"/>
+</div>
+<button class="absolute bottom-0 right-0 p-2 bg-primary text-on-primary rounded-full shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+</button>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="text-label-md px-3 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full font-bold">Foodie VIP</span>
+<span class="text-label-md text-on-surface-variant">Member since Jan 2023</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface mt-space-xs">Alex Morgan</h1>
+<p class="text-body-md text-on-surface-variant">alex.morgan@tastingroom.io • +1 (555) 382-9011</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md relative z-10">
+<div class="bg-surface-container-lowest px-space-lg py-space-sm rounded-full shadow-sm flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[24px]">local_fire_department</span>
+<div>
+<div class="text-label-sm text-on-surface-variant">Loyalty Points</div>
+<div class="text-headline-sm font-headline-sm text-on-surface">1,420 pts</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="px-space-xl py-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Navigation Tabs for Profile Sections -->
+<div class="lg:col-span-3 flex flex-col gap-space-xs sticky top-20 h-fit">
+<a class="profile-tab flex items-center gap-space-md px-space-lg py-space-md rounded-full bg-primary-container text-on-primary-container font-headline-sm transition-all shadow-sm" href="#personal" onclick="switchTab('personal', event)">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span>Personal Info</span>
+</a>
+<a class="profile-tab flex items-center gap-space-md px-space-lg py-space-md rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-headline-sm transition-all" href="#addresses" onclick="switchTab('addresses', event)">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+<span>Delivery Addresses</span>
+</a>
+<a class="profile-tab flex items-center gap-space-md px-space-lg py-space-md rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-headline-sm transition-all" href="#payments" onclick="switchTab('payments', event)">
+<span class="material-symbols-outlined text-[20px]">credit_card</span>
+<span>Payment Methods</span>
+</a>
+<a class="profile-tab flex items-center gap-space-md px-space-lg py-space-md rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-headline-sm transition-all" href="#notifications" onclick="switchTab('notifications', event)">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span>Notifications</span>
+</a>
+<a class="profile-tab flex items-center gap-space-md px-space-lg py-space-md rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-headline-sm transition-all" href="#security" onclick="switchTab('security', event)">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+<span>Security & Privacy</span>
+</a>
+</div>
+<!-- Right Column: Sections -->
+<div class="lg:col-span-9 flex flex-col gap-space-xl">
+<!-- SECTION 1: Personal Information -->
+<div class="profile-section bg-surface-container-lowest rounded-xl p-space-xl shadow-sm" id="section-personal">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Personal Information</h2>
+<p class="text-body-md text-on-surface-variant">Update your photo and personal details here.</p>
+</div>
+<button class="px-space-lg py-2 bg-primary text-on-primary rounded-full text-label-lg font-bold hover:scale-105 transition-transform cursor-pointer" onclick="saveProfile()">Save Changes</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div>
+<label class="block text-label-md text-on-surface-variant mb-space-xs">First Name</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="profile-first-name" type="text" value="Alex"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-space-xs">Last Name</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="profile-last-name" type="text" value="Morgan"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-space-xs">Email Address</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="profile-email" type="email" value="alex.morgan@tastingroom.io"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-space-xs">Phone Number</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="profile-phone" type="text" value="+1 (555) 382-9011"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-label-md text-on-surface-variant mb-space-xs">Bio / Dietary Preferences</label>
+<textarea class="w-full bg-surface-container-low text-on-surface p-space-md rounded-xl text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none" rows="3">Passionate food enthusiast. Love artisan bakeries, spicy ramen, and organic farm-to-table salads. No peanuts please!</textarea>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Saved Delivery Addresses -->
+<div class="profile-section bg-surface-container-lowest rounded-xl p-space-xl shadow-sm" id="section-addresses">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Saved Delivery Addresses</h2>
+<p class="text-body-md text-on-surface-variant">Manage your drop-off locations for speedy ordering.</p>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-secondary-container text-on-secondary-container rounded-full text-label-lg font-bold hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span> Add Address
+          </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Address Card 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl relative flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">home</span>
+<span class="text-headline-sm font-headline-sm text-on-surface">Home</span>
+</div>
+<span class="text-label-sm px-2 py-1 bg-primary text-on-primary rounded-full">Default</span>
+</div>
+<p class="text-body-md text-on-surface-variant">742 Evergreen Terrace, Apt 4B<br/>Downtown, New York, NY 10001</p>
+</div>
+<div class="flex items-center gap-space-md mt-space-lg pt-space-md border-t border-outline-variant/20">
+<button class="text-label-md text-primary font-bold hover:underline">Edit</button>
+<button class="text-label-md text-error font-bold hover:underline">Remove</button>
+</div>
+</div>
+<!-- Address Card 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl relative flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">work</span>
+<span class="text-headline-sm font-headline-sm text-on-surface">Office</span>
+</div>
+</div>
+<p class="text-body-md text-on-surface-variant">100 Financial Plaza, Suite 1200<br/>Midtown, New York, NY 10022</p>
+</div>
+<div class="flex items-center gap-space-md mt-space-lg pt-space-md border-t border-outline-variant/20">
+<button class="text-label-md text-primary font-bold hover:underline">Set as Default</button>
+<button class="text-label-md text-primary font-bold hover:underline">Edit</button>
+<button class="text-label-md text-error font-bold hover:underline">Remove</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Payment Methods -->
+<div class="profile-section bg-surface-container-lowest rounded-xl p-space-xl shadow-sm" id="section-payments">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Payment Methods</h2>
+<p class="text-body-md text-on-surface-variant">Securely manage your credit cards and digital wallets.</p>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-secondary-container text-on-secondary-container rounded-full text-label-lg font-bold hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span> Add Card
+          </button>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Item 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-8 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-label-sm shadow-sm">
+                VISA
+              </div>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">•••• •••• •••• 4292</div>
+<div class="text-body-sm text-on-surface-variant">Expires 09/25 • Default</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-label-sm px-3 py-1 bg-surface-container-high text-on-surface rounded-full">Primary</span>
+<button class="text-error text-label-md font-bold hover:underline">Delete</button>
+</div>
+</div>
+<!-- Card Item 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-8 rounded bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-sm shadow-sm">
+                MC
+              </div>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">•••• •••• •••• 8810</div>
+<div class="text-body-sm text-on-surface-variant">Expires 12/27</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="text-primary text-label-md font-bold hover:underline">Make Default</button>
+<button class="text-error text-label-md font-bold hover:underline">Delete</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Notification Preferences -->
+<div class="profile-section bg-surface-container-lowest rounded-xl p-space-xl shadow-sm" id="section-notifications">
+<div class="mb-space-lg">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Notification Preferences</h2>
+<p class="text-body-md text-on-surface-variant">Choose how you want to receive order updates and foodie promos.</p>
+</div>
+<div class="flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">Push Notifications (Live Order Status)</div>
+<div class="text-body-sm text-on-surface-variant">Get instant rider tracking updates right on your screen.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">SMS Order Updates</div>
+<div class="text-body-sm text-on-surface-variant">Receive text alerts when your food is arriving.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">Promotions & Restaurant Offers</div>
+<div class="text-body-sm text-on-surface-variant">Receive emails about weekly discounts, loyalty drops, and new spots.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- SECTION 5: Account Security -->
+<div class="profile-section bg-surface-container-lowest rounded-xl p-space-xl shadow-sm" id="section-security">
+<div class="mb-space-lg">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Account Security</h2>
+<p class="text-body-md text-on-surface-variant">Protect your TastingRoom account with a strong password.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-lg">
+<div>
+<label class="block text-label-md text-on-surface-variant mb-space-xs">Current Password</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="••••••••••••" type="password"/>
+</div>
+<div></div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-space-xs">New Password</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="••••••••••••" type="password"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-space-xs">Confirm New Password</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="••••••••••••" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-lg border-t border-outline-variant/20">
+<div>
+<div class="text-headline-sm font-headline-sm text-error">Danger Zone</div>
+<div class="text-body-sm text-on-surface-variant">Permanently delete your account and remove all data.</div>
+</div>
+<button class="px-space-lg py-2 bg-error-container text-on-error-container rounded-full text-label-lg font-bold hover:scale-105 transition-transform">Delete Account</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Script for Tab Switching -->
+<script src="../api.js"></script>
+<script>
+    function switchTab(tabId, event) {
+      event.preventDefault();
+      
+      // Update tab button styles
+      document.querySelectorAll('.profile-tab').forEach(tab => {
+        tab.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-headline-sm', 'shadow-sm');
+        tab.classList.add('text-on-surface-variant', 'hover:bg-surface-container-high', 'hover:text-on-surface');
+      });
+      event.currentTarget.classList.add('bg-primary-container', 'text-on-primary-container', 'font-headline-sm', 'shadow-sm');
+      event.currentTarget.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high', 'hover:text-on-surface');
+
+      // Scroll to section smoothly
+      const targetSection = document.getElementById('section-' + tabId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    async function loadProfile() {
+      try {
+        const user = await API.getUser(1);
+        if (user) {
+          const names = user.name.split(' ');
+          document.getElementById('profile-first-name').value = names[0] || '';
+          document.getElementById('profile-last-name').value = names.slice(1).join(' ') || '';
+          document.getElementById('profile-email').value = user.email || '';
+          document.getElementById('profile-phone').value = user.phone || '';
+          
+          document.querySelector('h1').innerText = user.name;
+          const p = document.querySelector('.text-headline-lg + p');
+          if (p) p.innerText = `${user.email} • ${user.phone || ''}`;
+        }
+      } catch (err) {
+        console.warn('Profile load error:', err);
+      }
+    }
+
+    async function saveProfile() {
+      const first = document.getElementById('profile-first-name').value.trim();
+      const last = document.getElementById('profile-last-name').value.trim();
+      const email = document.getElementById('profile-email').value.trim();
+      const phone = document.getElementById('profile-phone').value.trim();
+
+      const fullName = `${first} ${last}`.trim();
+
+      try {
+        await API.updateUser(1, {
+          name: fullName,
+          email: email,
+          phone: phone,
+          address: "742 Evergreen Terrace, Apt 4B, Downtown, 5th Ave"
+        });
+        showToast('Profile updated successfully!');
+        loadProfile();
+      } catch (e) {
+        showToast(e.message || 'Error updating profile', 'error');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadProfile);
+  </script>
+</div></main></div></body></html>

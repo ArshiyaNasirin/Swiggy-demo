@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface-variant": "#59413a", "primary-container": "#cb491b", "inverse-primary": "#ffb59e", "tertiary-container": "#008376", "background": "#fbf9f5", "secondary": "#8e4e14", "inverse-surface": "#30312e", "secondary-fixed-dim": "#ffb780", "on-error-container": "#93000a", "surface-bright": "#fbf9f5", "surface-container-low": "#f5f3ef", "on-secondary-container": "#783d01", "tertiary-fixed": "#8cf5e4", "on-secondary": "#ffffff", "on-tertiary-container": "#f4fffb", "on-tertiary": "#ffffff", "primary-fixed": "#ffdbd0", "surface-container-highest": "#e4e2de", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "outline": "#8d7169", "tertiary": "#00685d", "secondary-fixed": "#ffdcc4", "surface-container": "#efeeea", "primary-fixed-dim": "#ffb59e", "surface-container-high": "#eae8e4", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005048", "outline-variant": "#e1bfb5", "inverse-on-surface": "#f2f0ed", "tertiary-fixed-dim": "#6fd8c8", "secondary-container": "#ffab69", "on-tertiary-fixed": "#00201c", "primary": "#a93101", "on-background": "#1b1c1a", "on-primary-fixed": "#3a0b00", "surface": "#fbf9f5", "on-surface": "#1b1c1a", "on-secondary-fixed": "#2f1400", "surface-variant": "#e4e2de", "surface-dim": "#dbdad6", "error": "#ba1a1a", "on-secondary-fixed-variant": "#6f3800", "on-primary-fixed-variant": "#842400", "surface-tint": "#ac3403" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1.25rem" }, "fontFamily": { "display-lg": ["Cambria"], "headline-sm": ["Cambria"], "body-lg": ["Cambria"], "label-sm": ["Cambria"], "label-md": ["Cambria"], "headline-md": ["Cambria"], "headline-lg": ["Cambria"], "body-md": ["Cambria"], "display-lg-mobile": ["Cambria"], "label-lg": ["Cambria"], "body-sm": ["Cambria"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="FoodDelivery Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfgam4kkUWE7YBluSF_FcEou9OctmAC6idEI0uEXSSp7_-21W7tpCtj-V0v1JaeYJqzcJk-OcZv_gY1_cAd9ClI_ou1v7loscosWjwAT44X2o1mrsA2N7JA62YB_08RgyACNIzPV-2ZG-eqjKJw7fAyFJMItrHVBu-iS1Z0ouOE9BjpzDs7RqXR9riSK0NBsu5Q_aakpr86hx9irsGJs2FBGEicyOYGFS_k2dz3zo0"/><span class="text-headline-md font-headline-md text-primary">TastingRoom</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-md rounded-full"><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">home</span>Home</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="restaurants" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">storefront</span>Restaurants</a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-md rounded-full" data-path="orders" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">receipt_long</span>Orders</a><a class="flex items-center px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined mr-space-md text-[20px]">person</span>Profile</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-full text-on-surface-variant text-label-lg cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span>Downtown, 5th Ave</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="relative flex-1"><span class="absolute inset-y-0 left-0 flex items-center pl-space-md pointer-events-none material-symbols-outlined text-outline text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface pl-10 pr-space-md py-2 rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search dishes, restaurants..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-primary text-on-primary text-label-sm rounded-full flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-24">
+<!-- Top Banner / Header area for the Orders Screen -->
+<div class="px-space-xl pt-space-xl pb-space-lg flex flex-col md:flex-row justify-between items-start md:items-end gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-headline-sm uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Culinary Archive</span>
+</div>
+<h1 class="text-display-lg-mobile md:text-display-lg text-on-surface font-display-lg">Order History</h1>
+<p class="text-body-lg text-on-surface-variant mt-space-xs">Relive your past gastronomic journeys or reorder your favorites in a single tap.</p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">filter_list</span>
+<span class="text-label-lg font-label-lg text-on-surface">Filter:</span>
+<select class="bg-transparent text-label-lg font-label-lg text-primary focus:outline-none cursor-pointer" id="order-filter">
+<option value="all">All Orders (12)</option>
+<option value="delivered">Delivered</option>
+<option value="cancelled">Cancelled</option>
+</select>
+</div>
+</div>
+<!-- Stats Bento Summary -->
+<div class="px-space-xl mb-space-xl grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low rounded-lg p-space-lg flex items-center justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div>
+<p class="text-label-md text-on-surface-variant uppercase tracking-wider">Total Orders</p>
+<h3 class="text-headline-lg text-on-surface mt-1 font-headline-lg">12 Orders</h3>
+<p class="text-body-sm text-primary mt-1 flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +2 this month
+        </p>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-lg flex items-center justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary/5 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div>
+<p class="text-label-md text-on-surface-variant uppercase tracking-wider">Favorite Cuisines</p>
+<h3 class="text-headline-lg text-on-surface mt-1 font-headline-lg">Italian & Sushi</h3>
+<p class="text-body-sm text-tertiary mt-1 flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span> 6 repeat orders
+        </p>
+</div>
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">local_pizza</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-lg flex items-center justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/5 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div>
+<p class="text-label-md text-on-surface-variant uppercase tracking-wider">Total Spent</p>
+<h3 class="text-headline-lg text-on-surface mt-1 font-headline-lg">$482.50</h3>
+<p class="text-body-sm text-secondary mt-1 flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">savings</span> Avg $40.20 / order
+        </p>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+</div>
+</div>
+<!-- Orders Feed Container -->
+<div class="px-space-xl flex flex-col gap-space-md" id="orders-feed-container">
+<!-- Order Card 1: Delivered -->
+<div class="order-card bg-surface-container-low rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-space-lg items-start md:items-center justify-between" data-status="delivered">
+<div class="flex items-start gap-space-md flex-1">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="A vibrant artisan wood-fired margherita pizza with fresh basil leaves, melting mozzarella cheese, and charred bubbly crust sitting on a rustic wooden table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqA-v6MPKw-jnSIxqyDItoNlG4iV95cAMKL8h1MV4YI0_u-6EFSESIMKU0ak0kiDlDDAO-xI4p-TL7_kX4DeatnDP_6DqXLeh4l6jXnwgTbe3P5c57cdUAni6cufYz_pvnC5O9-gB6Jb1rmj1nFlnoN4xGQsklPkLGE88Imuin_i1BEGZNaeiuCc81Ep8SG9Of5Z2cQdvqfK85v03NMWdUGgeCf5mpRwqJHE-C-89N"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h4 class="text-headline-md font-headline-md text-on-surface">Trattoria Bella Napoli</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-emerald-100 text-emerald-800">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Delivered
+            </span>
+</div>
+<p class="text-body-sm text-outline mt-0.5">Order #TR-84920 • Oct 24, 2023 at 7:45 PM</p>
+<p class="text-body-md text-on-surface-variant mt-2 line-clamp-1">1x Truffle Pizza, 2x Garlic Focaccia, 1x Tiramisu</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto pt-space-sm md:pt-0 gap-space-md border-t md:border-t-0 border-surface-container-highest">
+<div class="text-left md:text-right">
+<span class="text-label-sm text-outline block">Total Price</span>
+<span class="text-headline-md font-headline-md text-primary">$48.50</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors" onclick="openDetailsModal('Trattoria Bella Napoli', 'TR-84920', 'Oct 24, 2023', '$48.50', 'Delivered')">
+            View Details
+          </button>
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm flex items-center gap-1" onclick="triggerReorder('Trattoria Bella Napoli')">
+<span class="material-symbols-outlined text-[16px]">refresh</span> Reorder
+          </button>
+</div>
+</div>
+</div>
+<!-- Order Card 2: Delivered -->
+<div class="order-card bg-surface-container-low rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-space-lg items-start md:items-center justify-between" data-status="delivered">
+<div class="flex items-start gap-space-md flex-1">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="An exquisite platter of fresh assorted sushi nigiri and maki rolls including salmon, tuna, and avocado rolls, garnished with pickled ginger and wasabi on a dark slate tray." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlpp-0RQuhtedHdNGSB-QYYdODm-Jhq_f0rh2bNWo3AQvSlGAYg8XoYzvT-pFdsB-mAN55Nhu0G2rrD775B0jOk-9150NGM93nFpaLmonzcX8dcksFPGskMR6anwTCDI0DntpLQkj8kIeR_un9qJshM_6Za7HY4mH4CaPZYIiakM9Sau-5n-a8uptXQxDjhoT5oX40l-ELM-FLerIDqkts25E1ykBkvac1iG5nipY0"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h4 class="text-headline-md font-headline-md text-on-surface">Sakura Ramen & Sushi Bar</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-emerald-100 text-emerald-800">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Delivered
+            </span>
+</div>
+<p class="text-body-sm text-outline mt-0.5">Order #SR-33912 • Oct 19, 2023 at 1:15 PM</p>
+<p class="text-body-md text-on-surface-variant mt-2 line-clamp-1">1x Tonkotsu Ramen, 1x Salmon Avocado Roll, 1x Green Tea Mochi</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto pt-space-sm md:pt-0 gap-space-md border-t md:border-t-0 border-surface-container-highest">
+<div class="text-left md:text-right">
+<span class="text-label-sm text-outline block">Total Price</span>
+<span class="text-headline-md font-headline-md text-primary">$34.20</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors" onclick="openDetailsModal('Sakura Ramen & Sushi Bar', 'SR-33912', 'Oct 19, 2023', '$34.20', 'Delivered')">
+            View Details
+          </button>
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm flex items-center gap-1" onclick="triggerReorder('Sakura Ramen & Sushi Bar')">
+<span class="material-symbols-outlined text-[16px]">refresh</span> Reorder
+          </button>
+</div>
+</div>
+</div>
+<!-- Order Card 3: Cancelled -->
+<div class="order-card bg-surface-container-low rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-space-lg items-start md:items-center justify-between opacity-85" data-status="cancelled">
+<div class="flex items-start gap-space-md flex-1">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="A juicy gourmet cheeseburger with melted cheddar, crisp lettuce, tomato, and special sauce on a brioche bun with crispy golden french fries on the side." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWhm8KJsql6X0m9JNfzs7e-7K8m61DhgbCN9u8MZNfiaQNkHoZrJjGdQTF0N8kP9Bai_oAHEOshHRJce2gUKw6Uy1LlJS3rJdg_cbnltgwcp4Fh-y34NEgIOZUufW3I9u9h5vC4LpUStGr6twpxmYxz-JglDT-L__7tBmOFp9thpP4bu0ZfJzAUekGQjhQvypex8IrwGEIq9SFeK-1hGV1cTJgqr6CthCVSePTL78R"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h4 class="text-headline-md font-headline-md text-on-surface">Burger Joint Express</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-rose-100 text-rose-800">
+<span class="w-1.5 h-1.5 rounded-full bg-rose-600"></span> Cancelled
+            </span>
+</div>
+<p class="text-body-sm text-outline mt-0.5">Order #BJ-10294 • Oct 12, 2023 at 8:30 PM</p>
+<p class="text-body-md text-on-surface-variant mt-2 line-clamp-1">2x Smokehouse Burger, 1x Loaded Fries, 2x Craft Soda (Refunded)</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto pt-space-sm md:pt-0 gap-space-md border-t md:border-t-0 border-surface-container-highest">
+<div class="text-left md:text-right">
+<span class="text-label-sm text-outline block">Total Price</span>
+<span class="text-headline-md font-headline-md text-outline line-through">$39.00</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors" onclick="openDetailsModal('Burger Joint Express', 'BJ-10294', 'Oct 12, 2023', '$39.00', 'Cancelled')">
+            View Details
+          </button>
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm flex items-center gap-1" onclick="triggerReorder('Burger Joint Express')">
+<span class="material-symbols-outlined text-[16px]">refresh</span> Reorder
+          </button>
+</div>
+</div>
+</div>
+<!-- Order Card 4: Delivered -->
+<div class="order-card bg-surface-container-low rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-space-lg items-start md:items-center justify-between" data-status="delivered">
+<div class="flex items-start gap-space-md flex-1">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="A bowl of creamy authentic Thai green chicken curry with bamboo shoots, Thai basil, and red bell peppers served beside steaming jasmine rice." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1EiA6EnHVHkq-pm2c31DbaO_TN0oGfzys_YAw0aQp175cx5-esciUG00Png7BZChzVi4E0NFkoYB9cNymynq2BTCWby_d9oy3jmOjbsFg8k9VantQZlpf2lBwt3xxEBXjb5G7apuMD3zHiltU_ZWuWCl5ysfhFUlC-MkFw46LWg0si3GfU4e55zhsHqEv8rmySI4VKxg6_QKmBkTdoegGi-KOnX_qpiKtHX-ZH_YU"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h4 class="text-headline-md font-headline-md text-on-surface">Bangkok Spice Kitchen</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-emerald-100 text-emerald-800">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Delivered
+            </span>
+</div>
+<p class="text-body-sm text-outline mt-0.5">Order #BS-55104 • Oct 05, 2023 at 6:20 PM</p>
+<p class="text-body-md text-on-surface-variant mt-2 line-clamp-1">1x Pad Thai Shrimp, 1x Green Curry Chicken, 2x Thai Iced Tea</p>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto pt-space-sm md:pt-0 gap-space-md border-t md:border-t-0 border-surface-container-highest">
+<div class="text-left md:text-right">
+<span class="text-label-sm text-outline block">Total Price</span>
+<span class="text-headline-md font-headline-md text-primary">$42.00</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors" onclick="openDetailsModal('Bangkok Spice Kitchen', 'BS-55104', 'Oct 05, 2023', '$42.00', 'Delivered')">
+            View Details
+          </button>
+<button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm flex items-center gap-1" onclick="triggerReorder('Bangkok Spice Kitchen')">
+<span class="material-symbols-outlined text-[16px]">refresh</span> Reorder
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More / Pagination -->
+<div class="px-space-xl mt-space-xl flex justify-center">
+<button class="px-space-xl py-3 rounded-full bg-surface-container-low text-on-surface text-label-lg font-label-lg hover:bg-surface-container-high transition-colors shadow-sm flex items-center gap-space-sm">
+<span>Load Older Orders</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+<!-- Modal Template (Hidden by default) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md opacity-0 pointer-events-none transition-opacity duration-300" id="order-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl p-space-xl shadow-xl transform scale-95 transition-transform duration-300 relative" id="modal-content">
+<button class="absolute top-space-md right-space-md w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeDetailsModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="flex items-center gap-space-sm text-primary mb-space-xs">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-label-md uppercase tracking-wider font-label-md">Order Summary Receipt</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-on-surface" id="modal-restaurant">Restaurant Name</h3>
+<p class="text-body-sm text-outline mt-1" id="modal-id-date">Order #00000 • Date</p>
+<div class="mt-space-lg pt-space-md border-t border-surface-container">
+<div class="flex justify-between items-center mb-space-sm">
+<span class="text-body-md font-body-md text-on-surface">Status</span>
+<span class="px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-emerald-100 text-emerald-800" id="modal-status">Delivered</span>
+</div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="text-body-md font-body-md text-on-surface">Delivery Address</span>
+<span class="text-body-md text-on-surface-variant">742 Evergreen Terrace, Apt 4B</span>
+</div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="text-body-md font-body-md text-on-surface">Payment Method</span>
+<span class="text-body-md text-on-surface-variant">Apple Pay (**** 4892)</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-md border-t border-surface-container">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-space-sm">Ordered Items</h4>
+<div class="flex flex-col gap-space-xs text-body-md text-on-surface-variant">
+<div class="flex justify-between"><span>1x Artisan Wood-fired Pizza</span><span>$24.00</span></div>
+<div class="flex justify-between"><span>2x Garlic Focaccia Bread</span><span>$12.00</span></div>
+<div class="flex justify-between"><span>1x Tiramisu Slice</span><span>$8.50</span></div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex justify-between items-center">
+<span class="text-headline-sm font-headline-sm text-on-surface">Total Amount</span>
+<span class="text-headline-lg font-headline-lg text-primary" id="modal-price">$48.50</span>
+</div>
+<div class="mt-space-xl flex gap-space-md">
+<button class="flex-1 py-3 rounded-full bg-surface-container text-on-surface text-label-lg font-label-lg hover:bg-surface-container-high transition-colors" onclick="closeDetailsModal()">Close</button>
+<button class="flex-1 py-3 rounded-full bg-primary text-on-primary text-label-lg font-label-lg hover:bg-primary-container transition-colors shadow-sm" onclick="handleModalReorder()">Reorder Items</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-space-xl right-space-xl bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md rounded-full shadow-xl flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 z-50" id="toast">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-body-md font-body-md" id="toast-message">Items added to your active bag!</span>
+</div>
+<script>
+    // Filter Functionality
+    const filterSelect = document.getElementById('order-filter');
+    const orderCards = document.querySelectorAll('.order-card');
+
+    filterSelect.addEventListener('change', (e) => {
+      const val = e.target.value;
+      orderCards.forEach(card => {
+        const status = card.getAttribute('data-status');
+        if (val === 'all' || status === val) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+    // Modal Logic
+    const modal = document.getElementById('order-modal');
+    const modalContent = document.getElementById('modal-content');
+    const modalRestaurant = document.getElementById('modal-restaurant');
+    const modalIdDate = document.getElementById('modal-id-date');
+    const modalStatus = document.getElementById('modal-status');
+    const modalPrice = document.getElementById('modal-price');
+
+    function openDetailsModal(restaurant, id, date, price, status) {
+      modalRestaurant.textContent = restaurant;
+      modalIdDate.textContent = `Order #${id} • ${date}`;
+      modalPrice.textContent = price;
+      modalStatus.textContent = status;
+      
+      if(status === 'Delivered') {
+        modalStatus.className = 'px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-emerald-100 text-emerald-800';
+      } else {
+        modalStatus.className = 'px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-rose-100 text-rose-800';
+      }
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalContent.classList.remove('scale-95');
+      modalContent.classList.add('scale-100');
+    }
+
+    function closeDetailsModal() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalContent.classList.remove('scale-100');
+      modalContent.classList.add('scale-95');
+    }
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeDetailsModal();
+      }
+    });
+
+  </script>
+</div></main></div>
+<script src="../api.js"></script>
+<script>
+  async function loadUserOrders() {
+    try {
+      const orders = await API.getOrders(1);
+      const container = document.getElementById('orders-feed-container');
+      if (!orders || orders.length === 0) {
+        container.innerHTML = `
+          <div class="bg-surface-container-low p-space-xl rounded-lg text-center flex flex-col items-center gap-space-md">
+            <span class="material-symbols-outlined text-primary text-[48px]">receipt_long</span>
+            <h3 class="text-headline-md text-on-surface">No orders placed yet</h3>
+            <p class="text-body-md text-on-surface-variant">Explore our curated kitchens and place your first delicious order!</p>
+            <button class="bg-primary text-on-primary px-space-lg py-3 rounded-full text-label-lg font-headline-sm" onclick="window.location.href='../restaurants/code.html'">
+              Explore Restaurants
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = '';
+      let totalSpent = 0;
+
+      orders.reverse().forEach(o => {
+        totalSpent += o.total_price;
+        const statusColors = {
+          'Delivered': 'bg-emerald-100 text-emerald-800',
+          'Cancelled': 'bg-rose-100 text-rose-800',
+          'Preparing': 'bg-amber-100 text-amber-800',
+          'Out for Delivery': 'bg-blue-100 text-blue-800',
+          'Pending': 'bg-orange-100 text-orange-800'
+        };
+        const colorClass = statusColors[o.status] || 'bg-primary-container/20 text-primary';
+
+        const canCancel = o.status !== 'Delivered' && o.status !== 'Cancelled';
+
+        const card = document.createElement('div');
+        card.className = 'order-card bg-surface-container-low rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-space-lg items-start md:items-center justify-between';
+        card.innerHTML = `
+          <div class="flex items-start gap-space-md flex-1">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden bg-surface-container shrink-0 flex items-center justify-center bg-primary-fixed text-primary">
+              <span class="material-symbols-outlined text-[32px]">restaurant</span>
+            </div>
+            <div class="flex flex-col flex-1 min-w-0">
+              <div class="flex items-center gap-space-sm flex-wrap">
+                <h4 class="text-headline-md font-headline-md text-on-surface">Restaurant #${o.restaurant_id}</h4>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm ${colorClass}">
+                  ${o.status}
+                </span>
+              </div>
+              <p class="text-body-sm text-outline mt-0.5">Order #TR-${o.id.toString().padStart(5, '0')} • ${new Date(o.created_at || Date.now()).toLocaleDateString()}</p>
+              <p class="text-body-md text-on-surface-variant mt-2 line-clamp-1">Delivering to: ${o.delivery_address || 'Address provided'}</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-between w-full md:w-auto pt-space-sm md:pt-0 gap-space-md border-t md:border-t-0 border-surface-container-highest">
+            <div class="text-left md:text-right">
+              <span class="text-label-sm text-outline block">Total Price</span>
+              <span class="text-headline-md font-headline-md text-primary">$${o.total_price.toFixed(2)}</span>
+            </div>
+            <div class="flex items-center gap-space-sm">
+              <button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors cursor-pointer" onclick="window.location.href='../order_status/code.html?order_id=${o.id}'">
+                Track / Receipt
+              </button>
+              ${canCancel ? `
+                <button class="px-space-md py-2 rounded-full text-label-lg font-label-lg bg-red-100 hover:bg-red-200 text-red-700 transition-colors cursor-pointer" onclick="cancelOrder(${o.id})">
+                  Cancel
+                </button>
+              ` : ''}
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      // Update Bento stats
+      const totalOrdersH3 = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-3 h3');
+      if (totalOrdersH3) totalOrdersH3.innerText = `${orders.length} Order${orders.length === 1 ? '' : 's'}`;
+
+      const totalSpentH3 = document.querySelectorAll('.grid.grid-cols-1.md\\:grid-cols-3 h3')[2];
+      if (totalSpentH3) totalSpentH3.innerText = `$${totalSpent.toFixed(2)}`;
+
+    } catch (err) {
+      console.warn('Orders fetch error:', err);
+    }
+  }
+
+  async function cancelOrder(orderId) {
+    if (!confirm('Are you sure you want to cancel this order?')) return;
+    try {
+      await API.cancelOrder(orderId);
+      showToast('Order cancelled.');
+      loadUserOrders();
+    } catch (e) {
+      showToast(e.message || 'Error cancelling order', 'error');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadUserOrders);
+</script>
+</body></html>
